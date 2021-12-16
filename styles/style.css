@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navbar-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.navbar-items{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-item, .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-container{
+    background-color: #E7E7F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title h1{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70.7px;
+}
