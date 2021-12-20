@@ -7,12 +7,12 @@ body{
 .navbar-container{
     display: grid;
     grid-template-columns: auto auto auto;
+    padding: 0 98px;
 }
 .navbar-items{
     list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .navbar-item, .logo{
     display: flex;
@@ -21,6 +21,13 @@ body{
 }
 .header-container{
     background-color: #E7E7F0;
+    height: 92vh;
+    background-size: cover;
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    padding: 0 135px;
+}
+.header-img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,4 +36,176 @@ body{
     font-size: 58px;
     font-weight: 700;
     line-height: 70.7px;
+}
+.header-title p{
+    padding-right: 30%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.header-title > div > p{
+    width: 20%;
+    display: inline;
+    font-family: Montserrat;
+    padding: 8px 36px;
+    border-radius: 8px;
+    background-color: #C4C4C4;
+}
+.header-title > div > p:nth-of-type(2){
+    background-color: transparent;
+    border: 1px solid #000000;
+}
+.surah-container{
+    margin:80px 135px 0 135px;
+}
+.surah-container > h1{
+    width: 859px;
+    height: 118px;
+    left: 290px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    margin: 0 auto;
+    padding-left: 50px;
+    text-align:center;
+}
+.surah-container > div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 0 35px 0;
+}
+.surah-container > div:first-of-type > div:first-of-type > p{
+    background-color: #C4C4C4;
+    padding: 12px 36px;
+    border-radius: 8px;
+}
+.surah-container > div:first-of-type > div:first-of-type> p:nth-of-type(2){
+   background-color: transparent;
+}
+.surah-container > div:first-of-type > div:first-of-type{
+    width: 370px;
+    height: 56px;
+    border:1px solid #000000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.surah-container > div:first-of-type> div:nth-of-type(2){
+    width: 270px;
+height: 56px;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.search-surah{
+    border: none;
+}
+.search-surah::placeholder{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.search-surah:focus{
+    outline: none;
+}
+.search-btn > i{
+    width: 48px;
+    height: 35px;
+    background-color: #C4C4C4;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 7%;
+    margin-left: 40px;
+}
+.surah-container>div:nth-of-type(2){
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.all-surahs{
+    margin: 35px 0;
+    border: 1px solid #000000;
+    width: 270px;
+    height: 120px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.all-surahs >p{
+    margin:16px 20px 0 11px;
+    width: 33px;
+    height:27px;
+    background-color: #C4C4C4;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 9px;
+}
+.surah-name{
+    font-weight: bold;
+}
+.all-surahs>div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 26px 0 9.5px 28px;
+    float: right;
+}
+.more-surah-btn{
+    width: 218px;
+    border: 1px solid #000000;
+    padding: 18px 47px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 40%;
+}
+.hajj-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 135px;
+}
+.title-texts{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+}
+.read-more-btn{
+    width: 218px;
+    border: 1px solid #000000;
+    padding: 18px 57px;
+    border-radius: 8px;
+    text-align: center;
+}
+.learn-arabic-container{
+    background-color: #C4C4C4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    vertical-align: middle;
+}
+.learn-arabic-images{
+    margin-left: 135px;
+}
+.learn-arabic-btns{
+    display: flex;
+}
+.arabic-dictionary{
+    width: 218px;
+    margin-left: 15px;
+    background-color: #CBCDD3;
+    padding: 18px 58px;
+    border-radius: 8px;
+    text-align: center;
+}
+.fa-book{
+    margin-right: 7px;
 }
